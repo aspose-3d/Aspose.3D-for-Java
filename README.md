@@ -44,7 +44,7 @@ Each example is runnable Java class with its own main method. You can run each e
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
 + **Product Home:** [Aspose.3D for Java](https://products.aspose.com/3d/java)
-+ **Download:** [Download Aspose.3D for Java](https://downloads.aspose.com/3d/java/)
++ **Download:** [Download Aspose.3D for Java](https://downloads.aspose.com/3d/java)
 + **Documentation:** [Aspose.3D for Java Documentation](https://docs.aspose.com//display/3Djava/Home)
 + **Forum:** [Aspose.3D for Java Forum](https://forum.aspose.com/c/3d)
 + **Blog:** [Aspose.3D for Java Blog](https://blog.aspose.com/category/aspose-products/aspose-3d-product-family/)
