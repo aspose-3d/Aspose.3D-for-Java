@@ -1,0 +1,12 @@
+# Aspose.3D Wavefront OBJ Exporter
+# Copyright 2004-2018 Aspose Pty Ltd.
+# File created: java.util.GregorianCalendar[time=1520823543684,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="GMT",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2018,MONTH=2,WEEK_OF_YEAR=11,WEEK_OF_MONTH=3,DAY_OF_MONTH=12,DAY_OF_YEAR=71,DAY_OF_WEEK=2,DAY_OF_WEEK_IN_MONTH=2,AM_PM=0,HOUR=2,HOUR_OF_DAY=2,MINUTE=59,SECOND=3,MILLISECOND=684,ZONE_OFFSET=0,DST_OFFSET=0]
+
+newmtl mat_957140874
+	Ka 0.20000000000000000 0.20000000000000000 0.20000000000000000
+	Kd 0.80000000000000000 0.80000000000000000 0.80000000000000000
+	d 1
+	Tr 0.0
+	illum 2
+	Ks 0.20000000000000000 0.20000000000000000 0.20000000000000000
+	Ns 20
