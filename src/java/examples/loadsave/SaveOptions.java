@@ -67,7 +67,7 @@ public class SaveOptions {
             // The path to the documents directory.
             String MyDir = RunExamples.getDataDir();
             // Initialize an object
-            FBXSaveOptions saveOpts = new FBXSaveOptions(FileFormat.ASE);
+            FBXSaveOptions saveOpts = new FBXSaveOptions(FileFormat.FBX7400ASCII);
             // Generates the legacy material properties.
             saveOpts.setExportLegacyMaterialProperties(true);
             // Fold repeated curve data using FBX's animation reference count
