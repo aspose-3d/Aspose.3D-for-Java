@@ -14,7 +14,7 @@ This repository contains Java Example Projects for [Aspose.3D for Java](https://
 Clone or Download the ZIP and extract the contents to your local hard drive. If you have IntelliJ IDEA, then open the project directly 
 by browsing to the folder. For Netbeans and Eclipse, you can import project feature.
 
-Also download the [latest version](https://artifact.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-3d/) of Aspose.3D for Java and set/fix jar references.
+Also download the [latest version](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-3d/) of Aspose.3D for Java and set/fix jar references.
 
 
 ## Open Source Feel of Aspose.3D
