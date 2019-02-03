@@ -15,7 +15,7 @@ import java.nio.file.Paths;
 public class RunExamples {
 
     public static void main(String[] args) throws Exception {
-        System.out.println("Open runExamples.cs. \nIn Main() method uncomment the example that you want to run.");
+        System.out.println("Open RunExamples.java. \nIn Main() method uncomment the example that you want to run.");
         System.out.println("=====================================================");
         // Uncomment the one you want to try out
 
@@ -50,7 +50,7 @@ public class RunExamples {
 
 //         Save3DMeshesInCustomBinaryFormat.run();
 //         InformationToScene.run();
-
+//         ExportSceneToCompressedAMF.run();
 
         // =====================================================
         // =====================================================
@@ -102,6 +102,8 @@ public class RunExamples {
         // =====================================================
         // =====================================================
 //         ConvertPolygonsToTriangles.run();
+//         GenerateUV.run();
+
 
         // Stop before exiting
         System.out.println("\n\nProgram Finished. Press any key to exit....");

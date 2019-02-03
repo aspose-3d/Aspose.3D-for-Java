@@ -52,7 +52,7 @@
  <dependency>
     <groupId>com.aspose</groupId>
     <artifactId>aspose-3d</artifactId>
-    <version>18.11</version>
+    <version>19.2</version>
 </dependency>
 
     </dependencies>
