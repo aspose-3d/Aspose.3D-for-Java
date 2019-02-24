@@ -1,5 +1,6 @@
 package examples;
 
+import examples.LinearExtrusion.*;
 import examples.animation.*;
 import examples.geometry.*;
 import examples.loadsave.*;
@@ -25,13 +26,13 @@ public class RunExamples {
         // =====================================================
         // =====================================================
 
-//         CreateEmpty3DDocument.run();
-//         ReadExistingScene.run();
-//         DetectFormat.run();
-//         SaveOptions.SavingDependenciesInMemoryFileSystem();
-//         LoadOptions.run();
-//         SaveOptions.run();
-//         Non_PBRtoPBRMaterial.run();
+        // CreateEmpty3DDocument.run();
+        // ReadExistingScene.run();
+        // DetectFormat.run();
+        // SaveOptions.SavingDependenciesInMemoryFileSystem();
+        // LoadOptions.run();
+        // SaveOptions.run();
+        // Non_PBRtoPBRMaterial.run();
 
         // =====================================================
         // =====================================================
@@ -39,8 +40,8 @@ public class RunExamples {
         // =====================================================
         // =====================================================
 
-//         PropertyToDocument.run();
-//         SetupTargetAndCamera.run();
+        // PropertyToDocument.run();
+        // SetupTargetAndCamera.run();
 
         // =====================================================
         // =====================================================
@@ -48,34 +49,34 @@ public class RunExamples {
         // =====================================================
         // =====================================================
 
-//         Save3DMeshesInCustomBinaryFormat.run();
-//         InformationToScene.run();
-//         ExportSceneToCompressedAMF.run();
+        // Save3DMeshesInCustomBinaryFormat.run();
+        // InformationToScene.run();
+        // ExportSceneToCompressedAMF.run();
 
         // =====================================================
         // =====================================================
         // Geometry and Hierarchy
         // =====================================================
 
-//         CubeScene.run();
-//         MaterialToCube.run();
-//         TransformationToNodeByQuaternion.run();
-//         TransformationToNodeByEulerAngles.run();
-//         TransformationToNodeByTransformationMatrix.run();
-//         NodeHierarchy.run();
-//         MeshGeometryData.run();
-//         SetupNormalsOnCube.run();
-//         TriangulateMesh.run();
-//         ConcatenateQuaternions.run();
-//         ApplyPBRMaterialToBox.run();
+        // CubeScene.run();
+        // MaterialToCube.run();
+        // TransformationToNodeByQuaternion.run();
+        // TransformationToNodeByEulerAngles.run();
+        // TransformationToNodeByTransformationMatrix.run();
+        // NodeHierarchy.run();
+        // MeshGeometryData.run();
+        // SetupNormalsOnCube.run();
+        // TriangulateMesh.run();
+        // ConcatenateQuaternions.run();
+        // ApplyPBRMaterialToBox.run();
 
-        //// =====================================================
-        //// =====================================================
-        //// 3D Modeling
-        //// =====================================================
-        //// =====================================================
+        // =====================================================
+        // =====================================================
+        // 3D Modeling
+        // =====================================================
+        // =====================================================
 
-//         Primitive3DModels.run();
+        // Primitive3DModels.run();
 
         // =====================================================
         // =====================================================
@@ -83,16 +84,16 @@ public class RunExamples {
         // =====================================================
         // =====================================================
 
-//         SplitMeshbyMaterial.run();
-//         ConvertSpherePrimitivetoMesh.run();
-//         ConvertBoxPrimitivetoMesh.run();
-//         ConvertPlanePrimitivetoMesh.run();
-//         ConvertCylinderPrimitivetoMesh.run();
-//         ConvertTorusPrimitivetoMesh.run();
-//         ConvertBoxMeshtoTriangleMeshCustomMemoryLayout.run();
-//         GenerateDataForMeshes.run();
-//         BuildTangentAndBinormalData.run();
-//         Encode3DMeshinGoogleDraco.run();
+        // SplitMeshbyMaterial.run();
+        // ConvertSpherePrimitivetoMesh.run();
+        // ConvertBoxPrimitivetoMesh.run();
+        // ConvertPlanePrimitivetoMesh.run();
+        // ConvertCylinderPrimitivetoMesh.run();
+        // ConvertTorusPrimitivetoMesh.run();
+        // ConvertBoxMeshtoTriangleMeshCustomMemoryLayout.run();
+        // GenerateDataForMeshes.run();
+        // BuildTangentAndBinormalData.run();
+        // Encode3DMeshinGoogleDraco.run();
 
 
 
@@ -101,9 +102,20 @@ public class RunExamples {
         // Polygons
         // =====================================================
         // =====================================================
-//         ConvertPolygonsToTriangles.run();
-//         GenerateUV.run();
+        //  ConvertPolygonsToTriangles.run();
+        //  GenerateUV.run();
 
+        // =====================================================
+        // =====================================================
+        // Working With Linear Extrusion
+        // =====================================================
+        // =====================================================
+        // PerformingLinearExtrusion.run();
+        // SlicesInLinearExtrusion.run();
+        // CenterInLinearExtrusion.run();
+        // TwistInLinearExtrusion.run();
+        // TwistOffsetInLinearExtrusion.run();
+        // DirectionInLinearExtrusion.run();
 
         // Stop before exiting
         System.out.println("\n\nProgram Finished. Press any key to exit....");
