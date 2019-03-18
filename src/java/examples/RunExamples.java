@@ -94,6 +94,7 @@ public class RunExamples {
         // GenerateDataForMeshes.run();
         // BuildTangentAndBinormalData.run();
         // Encode3DMeshinGoogleDraco.run();
+        // XPathLikeObjectQueries.run();
 
 
 
