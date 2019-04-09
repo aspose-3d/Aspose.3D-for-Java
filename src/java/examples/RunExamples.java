@@ -8,6 +8,7 @@ import examples.modeling.*;
 import examples.objects.*;
 import examples.polygons.*;
 import examples.scene.*;
+import examples.render.*;
 
 import java.io.File;
 import java.nio.file.Paths;
@@ -118,6 +119,17 @@ public class RunExamples {
         // TwistOffsetInLinearExtrusion.run();
         // DirectionInLinearExtrusion.run();
 
+
+        // =====================================================
+        // =====================================================
+        // Render
+        // =====================================================
+        // =====================================================
+        // SwtRealtimeRendering.run();
+        // RenderToFile.run();
+        // RenderToBufferedImage.run();
+        // ManualRenderTarget.run();
+
         // Stop before exiting
         System.out.println("\n\nProgram Finished. Press any key to exit....");
         System.in.read();
@@ -126,8 +138,15 @@ public class RunExamples {
     public static String getDataDir() {
         return (new File("Data")).getAbsolutePath() + "/";
     }
+    private static String getOutputDir() {
+        File file = new File("Output");
+        if(!file.isDirectory())
+            file.mkdirs();
+
+        return file.getAbsolutePath();
+    }
 
     public static String getOutputFilePath(String s) {
-        return s.replace(".", "_out.");
+        return Paths.get(getOutputDir(), s).toString();
     }
 }
