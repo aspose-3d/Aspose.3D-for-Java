@@ -9,6 +9,7 @@ import examples.objects.*;
 import examples.polygons.*;
 import examples.scene.*;
 import examples.render.*;
+import examples.workingwithVRML.OpenVRML;
 
 import java.io.File;
 import java.nio.file.Paths;
@@ -96,6 +97,7 @@ public class RunExamples {
         // BuildTangentAndBinormalData.run();
         // Encode3DMeshinGoogleDraco.run();
         // XPathLikeObjectQueries.run();
+        // WorkingWithSphereRadius.run();
 
 
 
@@ -119,7 +121,6 @@ public class RunExamples {
         // TwistOffsetInLinearExtrusion.run();
         // DirectionInLinearExtrusion.run();
 
-
         // =====================================================
         // =====================================================
         // Render
@@ -129,6 +130,12 @@ public class RunExamples {
         // RenderToFile.run();
         // RenderToBufferedImage.run();
         // ManualRenderTarget.run();
+        // =====================================================
+        // =====================================================
+        // Working With VRML files
+        // =====================================================
+        // =====================================================
+        // OpenVRML.run();
 
         // Stop before exiting
         System.out.println("\n\nProgram Finished. Press any key to exit....");
