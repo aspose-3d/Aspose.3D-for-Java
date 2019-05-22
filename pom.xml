@@ -56,7 +56,7 @@
  <dependency>
     <groupId>com.aspose</groupId>
     <artifactId>aspose-3d</artifactId>
-    <version>19.4</version>
+    <version>19.5</version>
 </dependency>
 
         <dependency>

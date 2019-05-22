@@ -54,7 +54,8 @@ public class RunExamples {
         // Save3DMeshesInCustomBinaryFormat.run();
         // InformationToScene.run();
         // ExportSceneToCompressedAMF.run();
-
+        // ChangePlaneOrientation.run();
+        
         // =====================================================
         // =====================================================
         // Geometry and Hierarchy
