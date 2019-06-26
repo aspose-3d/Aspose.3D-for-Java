@@ -1,6 +1,9 @@
 package examples;
 
 import examples.LinearExtrusion.*;
+import examples.WorkingWithCylinder.CreateFanCylinder;
+import examples.WorkingWithCylinder.CustomizedOffsetTopCylinder;
+import examples.WorkingWithCylinder.CustomizedShearBottomCylinder;
 import examples.animation.*;
 import examples.geometry.*;
 import examples.loadsave.*;
@@ -137,6 +140,15 @@ public class RunExamples {
         // =====================================================
         // =====================================================
         // OpenVRML.run();
+
+        // =====================================================
+        // =====================================================
+        // Working With Cylinder
+        // =====================================================
+        // =====================================================
+        // CustomizedOffsetTopCylinder.run();
+        // CreateFanCylinder.run();
+        // CustomizedShearBottomCylinder.run();
 
         // Stop before exiting
         System.out.println("\n\nProgram Finished. Press any key to exit....");
