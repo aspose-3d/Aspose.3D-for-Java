@@ -9,6 +9,7 @@ import examples.geometry.*;
 import examples.loadsave.*;
 import examples.modeling.*;
 import examples.objects.*;
+import examples.pointcloud.*;
 import examples.polygons.*;
 import examples.scene.*;
 import examples.render.*;
@@ -149,6 +150,20 @@ public class RunExamples {
         // CustomizedOffsetTopCylinder.run();
         // CreateFanCylinder.run();
         // CustomizedShearBottomCylinder.run();
+
+        // =====================================================
+        // =====================================================
+        // Working With Point Cloud
+        // =====================================================
+        // =====================================================
+        // DecodeMesh.run();
+        // EncodeMesh.run();
+        // EncodeSphereAsPointCloud.run();
+        // EncodeMeshToPly.run();
+        // DecodeMeshFromPly.run();
+        // ExportToPlyAsPointCloud.run();
+
+
 
         // Stop before exiting
         System.out.println("\n\nProgram Finished. Press any key to exit....");
