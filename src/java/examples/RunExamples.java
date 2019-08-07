@@ -39,6 +39,7 @@ public class RunExamples {
         // LoadOptions.run();
         // SaveOptions.run();
         // Non_PBRtoPBRMaterial.run();
+        // SaveOptions.prettyPrintInGltfSaveOption();
 
         // =====================================================
         // =====================================================
@@ -103,6 +104,8 @@ public class RunExamples {
         // Encode3DMeshinGoogleDraco.run();
         // XPathLikeObjectQueries.run();
         // WorkingWithSphereRadius.run();
+        // CreatePolygonInMesh.run();
+
 
 
 
@@ -162,6 +165,7 @@ public class RunExamples {
         // EncodeMeshToPly.run();
         // DecodeMeshFromPly.run();
         // ExportToPlyAsPointCloud.run();
+        // Export3DSceneAsPointCloud.run();
 
 
 

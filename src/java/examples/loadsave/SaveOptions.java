@@ -5,6 +5,7 @@ import examples.RunExamples;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -18,7 +19,23 @@ public class SaveOptions {
             glTFSaveOptions();
             drcSaveOptions();
         }
-        public static void colladaSaveOption()
+    //This method is supported by version 19.8 or greater
+    public static void prettyPrintInGltfSaveOption() throws IOException {
+        // ExStart:prettyPrintInGltfSaveOption
+        // Initialize 3D scene
+        Scene scene = new Scene(new Sphere());
+        // Initialize GLTFSaveOptions
+        GLTFSaveOptions opt = new GLTFSaveOptions(FileFormat.GLTF2);
+        // opt.prettyPrint = true; //Old code
+        // The JSON content of GLTF file is indented for human reading, default value is false
+        // Use setter to change this configuration.
+        opt.setPrettyPrint(true);
+        // Save 3D Scene
+        scene.save(RunExamples.getDataDir() + "prettyPrintInGltfSaveOption.gltf", opt);
+        // ExEnd:prettyPrintInGltfSaveOption
+    }
+
+    public static void colladaSaveOption()
         {
             // ExStart:ColladaSaveOption
             // The path to the documents directory.
@@ -135,6 +152,7 @@ public class SaveOptions {
             saveU3DOptions.setMeshCompression(true);
             // ExEnd:U3DSaveOption
         }
+        
         public static void glTFSaveOptions() throws Exception {
             // ExStart:glTFSaveOptions
             // The path to the documents directory.
