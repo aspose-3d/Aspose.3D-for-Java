@@ -8,7 +8,9 @@ This repository contains Java Example Projects for [Aspose.3D for Java](https://
 </p>
 
 ## How to use the Examples?
-All the examples are arranged in src folder and any modern IDE like IntelliJ IDEA, Eclipse, Netbeans etc can import the source folder easily. Visit our [documentation website]((https://docs.aspose.com/display/3djava/How+to+Run+the+Examples)) for more details.
+All the examples are arranged in src folder and any modern IDE like IntelliJ IDEA, Eclipse, Netbeans etc can import the source folder easily. Visit our [documentation website](https://docs.aspose.com/display/3djava/How+to+Run+the+Examples) for more details.
+
+
 
 ## Install and Configure Maven
 
