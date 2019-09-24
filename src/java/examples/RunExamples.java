@@ -40,6 +40,7 @@ public class RunExamples {
         // SaveOptions.run();
         // Non_PBRtoPBRMaterial.run();
         // SaveOptions.prettyPrintInGltfSaveOption();
+        // SaveOptions.html5SaveOption();
 
         // =====================================================
         // =====================================================
@@ -77,6 +78,7 @@ public class RunExamples {
         // TriangulateMesh.run();
         // ConcatenateQuaternions.run();
         // ApplyPBRMaterialToBox.run();
+        // ExposeGeometricTransformation.run();
 
         // =====================================================
         // =====================================================

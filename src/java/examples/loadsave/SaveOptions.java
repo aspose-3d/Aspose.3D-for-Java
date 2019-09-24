@@ -34,6 +34,29 @@ public class SaveOptions {
         scene.save(RunExamples.getDataDir() + "prettyPrintInGltfSaveOption.gltf", opt);
         // ExEnd:prettyPrintInGltfSaveOption
     }
+    //This method is supported by version 19.9 or greater
+    public static void html5SaveOption() throws IOException {
+        // ExStart:html5SaveOption
+        // Initialize a scene
+        Scene scene = new Scene();
+        // Initialize a node
+        Node node = scene.getRootNode().createChildNode(new Cylinder());
+        // Set child node properites
+        LambertMaterial mat = new LambertMaterial();
+        mat.setDiffuseColor(new Vector3(0.34,0.59, 0.41));
+        node.setMaterial(mat);
+        Light light = new Light();
+        light.setLightType(LightType.POINT);
+        scene.getRootNode().createChildNode(light).getTransform().setTranslation(10, 0, 10);
+        // Initialize HTML5SaveOptions
+        HTML5SaveOptions opt = new HTML5SaveOptions();
+        // Turn off the grid
+        opt.setShowGrid(false);
+        //Turn off the user interface
+        opt.setShowUI(false);
+        scene.save(RunExamples.getDataDir() + "html5SaveOption.html", FileFormat.HTML5);
+        // ExEnd:html5SaveOption
+    }
 
     public static void colladaSaveOption()
         {
