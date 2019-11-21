@@ -1,5 +1,6 @@
 package examples.loadsave;
 
+import com.aspose.threed.FileFormat;
 import com.aspose.threed.Scene;
 import examples.RunExamples;
 
@@ -19,5 +20,17 @@ public class ReadExistingScene {
 
             // ExEnd:ReadExistingScene
             System.out.println("\n3D Scene is ready for the modification, addition or processing purposes.");
+            
+        }
+        
+        public static void ReadRVMWithAttributes() throws IOException
+        {
+            //ExStart:ReadRVMWithAttributes
+            String dataDir = RunExamples.getDataDir();
+
+            Scene scene = new Scene(dataDir + "att-test.rvm");
+            
+            FileFormat.RVM_BINARY.loadAttributes(scene, dataDir + "att-test.att");
+            //ExEnd: ReadRVMWithAttributes
         }
 }

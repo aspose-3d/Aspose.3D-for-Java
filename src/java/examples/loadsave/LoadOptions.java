@@ -115,4 +115,19 @@ public class LoadOptions {
             scene.open(MyDir + "warrior.x", loadXOpts);
             // ExEnd:XLoadOptions
         }
+        private static void FBXLoadOptions() throws IOException
+        {
+            //ExStart: FBXLoadOptions
+            String dataDir = RunExamples.getDataDir();
+            //This will output all properties defined in GlobalSettings in FBX file.
+            Scene scene = new Scene();
+            FBXLoadOptions opt = new FBXLoadOptions();
+            opt.setKeepBuiltinGlobalSettings(true);
+            scene.open(dataDir + "test.FBX", opt);
+            for(Property property:scene.getRootNode().getAssetInfo().getProperties())
+            {
+                System.out.println(property);
+            }
+            //ExEnd: FBXLoadOptions
+        }
 }
