@@ -280,4 +280,19 @@ public class SaveOptions {
             Files.write(Paths.get(MyDir, "Material.mtl"), mtl);
             // ExEnd:SavingDependenciesInMemoryFileSystem
         }
+        private static void RVMSaveOptions() throws IOException
+        {
+            //ExStart: RVMSaveOptions
+            String dataDir = RunExamples.getDataDir();
+            Scene scene = new Scene();
+            Node node = scene.getRootNode().createChildNode("Box", new Box());
+            node.setProperty("rvm:Refno", "=3462123");
+            node.setProperty("rvm:Description", "This is the description of the box");
+            //The RVM attribute's prefix is rvm:, all properties that starts with rvm: will be exported to .att file(the prefix will be removed)
+            RvmSaveOptions opt = new RvmSaveOptions();
+            opt.setAttributePrefix( "rvm:");
+            opt.setExportAttributes(true);
+            scene.save(dataDir + "test.rvm", opt);
+            //ExEnd: RVMSaveOptions
+        }
 }

@@ -34,6 +34,7 @@ public class RunExamples {
 
         // CreateEmpty3DDocument.run();
         // ReadExistingScene.run();
+        // ReadExistingScene.ReadRVMWithAttributes();
         // DetectFormat.run();
         // SaveOptions.SavingDependenciesInMemoryFileSystem();
         // LoadOptions.run();
@@ -61,6 +62,7 @@ public class RunExamples {
         // InformationToScene.run();
         // ExportSceneToCompressedAMF.run();
         // ChangePlaneOrientation.run();
+        ThreeDProperties.run();
         
         // =====================================================
         // =====================================================
