@@ -20,28 +20,29 @@ public class PropertyToDocument {
             // Find translation property on node's transform object
             Property translation = cube1.getTransform().findProperty("Translation");
 
-            // Create a curve mapping based on translation property
-            CurveMapping mapping = new CurveMapping(scene, translation);
+            // Create a bind point based on translation property
+            BindPoint bindPoint = new BindPoint(scene, translation);
 
             // Create the animation curve on X component of the scale
-            Curve curve;
-            mapping.bindCurve("X", curve = new Curve());
+            KeyframeSequence kfs = new KeyframeSequence();
             // Move node's translation to (10, 0, 10) at 0 sec using bezier interpolation
-            curve.add(0, 10.0f, Interpolation.BEZIER);
-            curve.add(0, 10.0f, Interpolation.BEZIER);
+            kfs.add(0, 10.0f, Interpolation.BEZIER);
             // Move node's translation to (20, 0, -10) at 3 sec
-            curve.add(3, 20.0f, Interpolation.BEZIER);
+            kfs.add(3, 20.0f, Interpolation.BEZIER);
             // Move node's translation to (30, 0, 0) at 5 sec
-            curve.add(5, 30.0f, Interpolation.LINEAR);
+            kfs.add(5, 30.0f, Interpolation.LINEAR);
+            
+            bindPoint.bindKeyframeSequence("X", kfs);
 
-            // Create the animation curve on Z component of the scale
-            mapping.bindCurve("Z", curve = new Curve());
+            kfs = new  KeyframeSequence();
             // Move node's translation to (10, 0, 10) at 0 sec using bezier interpolation
-            curve.add(0, 10.0f, Interpolation.BEZIER);
+            kfs.add(0, 10.0f, Interpolation.BEZIER);
             // Move node's translation to (20, 0, -10) at 3 sec
-            curve.add(3, -10.0f, Interpolation.BEZIER);
+            kfs.add(3, -10.0f, Interpolation.BEZIER);
             // Move node's translation to (30, 0, 0) at 5 sec
-            curve.add(5, 0.0f, Interpolation.LINEAR);
+            kfs.add(5, 0.0f, Interpolation.LINEAR);
+            
+            bindPoint.bindKeyframeSequence("Z", kfs);
 
             // The path to the documents directory.
             String MyDir = RunExamples.getDataDir();
