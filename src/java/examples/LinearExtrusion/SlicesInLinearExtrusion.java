@@ -9,13 +9,9 @@ public class SlicesInLinearExtrusion {
         // ExStart:SlicesInLinearExtrusion
         // The path to the documents directory.
         String MyDir = RunExamples.getDataDir();
-        // Initialize the base shape to be extruded
-        Shape shape = Shape.fromControlPoints(
-                new Vector3(1, 1, 0),
-                new Vector3(-1, 1, 0),
-                new Vector3(-1, -1, 0),
-                new Vector3(1, -1, 0)
-        );
+        // Initialize the base profile to be extruded
+        RectangleShape profile = new RectangleShape();
+        profile.setRoundingRadius(0.3);
         // Create a scene
         Scene scene = new Scene();
         // Create left node
@@ -26,9 +22,9 @@ public class SlicesInLinearExtrusion {
 
         // Slices parameter defines the number of intermediate points along the path of the extrusion
         // Perform linear extrusion on left node using slices property
-        left.createChildNode(new LinearExtrusion(shape, 2) {{setSlices(2);}});
+        left.createChildNode(new LinearExtrusion(profile, 2) {{setSlices(2);}});
         // Perform linear extrusion on right node using slices property
-        right.createChildNode(new LinearExtrusion(shape, 2) {{setSlices(10);}});
+        right.createChildNode(new LinearExtrusion(profile, 2) {{setSlices(10);}});
 
         // Save 3D scene
         scene.save(MyDir + "SlicesInLinearExtrusion.obj", FileFormat.WAVEFRONTOBJ);

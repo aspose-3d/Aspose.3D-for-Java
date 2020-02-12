@@ -10,13 +10,9 @@ public class CenterInLinearExtrusion {
         // ExStart:CenterInLinearExtrusion
         // The path to the documents directory.
         String MyDir = RunExamples.getDataDir();
-        // Initialize the base shape to be extruded
-        Shape shape = Shape.fromControlPoints(
-                new Vector3(1, 1, 0),
-                new Vector3(-1, 1, 0),
-                new Vector3(-1, -1, 0),
-                new Vector3(1, -1, 0)
-        );
+        // Initialize the base profile to be extruded
+        RectangleShape profile = new RectangleShape();
+        profile.setRoundingRadius(0.3);
         // Create a scene
         Scene scene = new Scene();
         // Create left node
@@ -27,11 +23,11 @@ public class CenterInLinearExtrusion {
 
         // If Center property is true, the extrusion range is from -Height/2 to Height/2, otherwise the extrusion is from 0 to Height
         // Perform linear extrusion on left node using center and slices property
-        left.createChildNode(new LinearExtrusion(shape, 2) {{ setCenter(false); setSlices(3); }});
+        left.createChildNode(new LinearExtrusion(profile, 2) {{ setCenter(false); setSlices(3); }});
         // Set ground plane for reference
         left.createChildNode(new Box(0.01, 3, 3));
         // Perform linear extrusion on left node using center and slices property
-        right.createChildNode(new LinearExtrusion(shape, 2) {{ setCenter(true); setSlices(3); }});
+        right.createChildNode(new LinearExtrusion(profile, 2) {{ setCenter(true); setSlices(3); }});
         // Set ground plane for reference
         right.createChildNode(new Box(0.01, 3, 3));
 
