@@ -14,14 +14,13 @@ Directory | Description
 
 ## 3D Processing API Features
 
-- [Create](https://docs.aspose.com/display/3djava/Create+an+Empty+3D+document), load and save 3D scene.
-- Work with [3D models](https://docs.aspose.com/display/3djava/3D+Modeling) and [3D objects](https://docs.aspose.com/display/3djava/3D+Objects).
+- [Create](https://docs.aspose.com/3d/java/create-an-empty-3d-document/), load and save 3D scene.
+- Work with 3D models and 3D objects.
 - Setup target camera in 3D document.
 - Add Node hierarchy and Share Geometric data of Mesh among Multiple Nodes of 3D Scene.
 - Create 3D Mesh and expose Geometric Transformation.
 - Convert all Polygons to Triangles in 3D Model.
-- Work with [linear extrusion](https://docs.aspose.com/display/3djava/Working+with+Linear+Extrusion), [cylinder](https://docs.aspose.com/display/3djava/Working+with+Cylinder), and [PointCloud](https://docs.aspose.com/display/3djava/Working+with+PointCloud).
-- [Many more](https://docs.aspose.com/display/3djava/Developer+Guide).
+- Work with [linear extrusion](https://docs.aspose.com/3d/java/working-with-linear-extrusion/), [cylinder](https://docs.aspose.com/3d/java/working-with-cylinder/), and [PointCloud](https://docs.aspose.com/3d/java/working-with-pointcloud/).
 
 ## Supported 3D File Formats
 
@@ -48,7 +47,7 @@ HTML
 
 ## Get Started with Aspose.3D for Java
 
-Aspose hosts all Java APIs at the [Aspose Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-3d). You can easily use Aspose.3D for Java API directly in your Maven projects with simple configurations. For the detailed instructions please visit [Installing Aspose.3D for Java from Aspose Repository](https://docs.aspose.com/display/3djava/Installation#Installation-InstallingAspose.3DforJavafromAsposeRepository) documentation page.
+Aspose hosts all Java APIs at the [Aspose Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-3d). You can easily use Aspose.3D for Java API directly in your Maven projects with simple configurations. For the detailed instructions please visit [Installing Aspose.3D for Java from Aspose Repository](https://docs.aspose.com/3d/java/installation/) documentation page.
 
 ## Create 3D Mesh using Polygons via java Code
 
@@ -97,4 +96,4 @@ scene.getRootNode().createChildNode(extrusion);
 scene.save(MyDir +  "LinearExtrusion.obj", FileFormat.WAVEFRONTOBJ);
 ```
 
-[Product Page](https://products.aspose.com/3d/java) | [Docs](https://docs.aspose.com/display/3djava/Home) | [Demos](https://products.aspose.app/3d/family) | [API Reference](https://apireference.aspose.com/java/3d) | [Examples](https://github.com/aspose-3d/Aspose.3D-for-Java) | [Blog](https://blog.aspose.com/category/3d/) | [Free Support](https://forum.aspose.com/c/3d) | [Temporary License](https://purchase.aspose.com/temporary-license)
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/3d/java) | [Docs](https://docs.aspose.com/3d/java/) | [Demos](https://products.aspose.app/3d/family) | [API Reference](https://apireference.aspose.com/java/3d) | [Examples](https://github.com/aspose-3d/Aspose.3D-for-Java) | [Blog](https://blog.aspose.com/category/3d/) | [Free Support](https://forum.aspose.com/c/3d) | [Temporary License](https://purchase.aspose.com/temporary-license)
