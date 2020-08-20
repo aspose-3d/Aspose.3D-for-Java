@@ -70,4 +70,4 @@ scene.getRootNode().createChildNode(extrusion);
 scene.save("output.obj", FileFormat.WAVEFRONTOBJ);
 ```
 
-[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/3d/java) | [Docs](https://docs.aspose.com/3d/java/) | [Demos](https://products.aspose.app/3d/family) | [API Reference](https://apireference.aspose.com/java/3d) | [Examples](https://github.com/aspose-3d/Aspose.3D-for-Java) | [Blog](https://blog.aspose.com/category/3d/) | [Free Support](https://forum.aspose.com/c/3d) | [Temporary License](https://purchase.aspose.com/temporary-license)
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/3d/java) | [Docs](https://docs.aspose.com/3d/java/) | [Demos](https://products.aspose.app/3d/family) | [API Reference](https://apireference.aspose.com/3d/java) | [Examples](https://github.com/aspose-3d/Aspose.3D-for-Java) | [Blog](https://blog.aspose.com/category/3d/) | [Free Support](https://forum.aspose.com/c/3d) | [Temporary License](https://purchase.aspose.com/temporary-license)
