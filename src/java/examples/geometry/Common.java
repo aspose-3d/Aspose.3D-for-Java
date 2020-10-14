@@ -3,8 +3,8 @@ package examples.geometry;
 import com.aspose.threed.Mesh;
 import com.aspose.threed.PolygonBuilder;
 import com.aspose.threed.Vector4;
-import com.aspose.threed.Vector4List;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Common {
@@ -13,7 +13,9 @@ public class Common {
         {
             // ExStart:DefineControlPoints
             // Initialize control points
-            Vector4List controlPoints = new Vector4List(8);
+        	List<Vector4> controlPoints = new ArrayList<Vector4>();
+        	
+            //Vector4List controlPoints = new Vector4List(8);
             controlPoints.add(new Vector4( -5.0, 0.0, 5.0, 1.0));
             controlPoints.add(new Vector4( 5.0, 0.0, 5.0, 1.0));
             controlPoints.add(new Vector4( 5.0, 10.0, 5.0, 1.0));

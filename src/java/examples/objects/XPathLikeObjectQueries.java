@@ -2,6 +2,7 @@ package examples.objects;
 
 import com.aspose.threed.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class XPathLikeObjectQueries {
@@ -37,16 +38,16 @@ public class XPathLikeObjectQueries {
                     - light
                      */
         //select objects that has type Camera or name is 'light' whatever it's located.
-        List<A3DObject> objects = s.getRootNode().selectObjects("//*[(@Type = 'Camera') or (@Name = 'light')]");
+        List<Object> objects = s.getRootNode().selectObjects("//*[(@Type = 'Camera') or (@Name = 'light')]");
 
         //Select single camera object under the child nodes of node named 'c' under the root node
-        A3DObject c1 = s.getRootNode().selectSingleObject("/c/*/<Camera>");
+        A3DObject c1 = (A3DObject) s.getRootNode().selectSingleObject("/c/*/<Camera>");
 
         // Select node named 'a1' under the root node, even if the 'a1' is not a directly child node of the
-        A3DObject obj = s.getRootNode().selectSingleObject("a1");
+        A3DObject obj = (A3DObject) s.getRootNode().selectSingleObject("a1");
 
         //Select the node itself, since the '/' is selected directly on the root node, so the root node is selected.
-        obj = s.getRootNode().selectSingleObject("/");
+        obj = (A3DObject) s.getRootNode().selectSingleObject("/");
         // ExEnd:XPathLikeObjectQueries
     }
 }
