@@ -2,3 +2,4 @@
 bin
 samples.iml
 /target/
+*.lic
