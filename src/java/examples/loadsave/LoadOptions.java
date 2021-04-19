@@ -22,7 +22,7 @@ public class LoadOptions {
             // ExStart:Discreet3DSOption
             // The path to the documents directory.
             String MyDir = RunExamples.getDataDir();
-            Discreet3DSLoadOptions loadOpts = new Discreet3DSLoadOptions();
+            Discreet3dsLoadOptions loadOpts = new Discreet3dsLoadOptions();
             // Sets wheather to use the transformation defined in the first frame of animation track.
             loadOpts.setApplyAnimationTransform(true);
             // Flip the coordinate system
@@ -54,7 +54,7 @@ public class LoadOptions {
             // The path to the documents directory.
             String MyDir = RunExamples.getDataDir();
             // Initialize an object
-            STLLoadOptions loadSTLOpts = new STLLoadOptions();
+            StlLoadOptions loadSTLOpts = new StlLoadOptions();
             // Flip the coordinate system.
             loadSTLOpts.setFlipCoordinateSystem(true);
             // Configure the look up paths to allow importer to find external dependencies.
@@ -67,7 +67,7 @@ public class LoadOptions {
             // The path to the documents directory.
             String MyDir = RunExamples.getDataDir();
             // Initialize an object
-            U3DLoadOptions loadU3DOpts = new U3DLoadOptions();
+            U3dLoadOptions loadU3DOpts = new U3dLoadOptions();
             // Flip the coordinate system.
             loadU3DOpts.setFlipCoordinateSystem(true);
             // Configure the look up paths to allow importer to find external dependencies.
@@ -81,7 +81,7 @@ public class LoadOptions {
             // Initialize Scene class object
             Scene scene = new Scene();
             // Set load options
-            GLTFLoadOptions loadOpt = new GLTFLoadOptions();
+            GltfLoadOptions loadOpt = new GltfLoadOptions();
             // The default value is true, usually we don't need to change it. Aspose.3D will automatically flip the V/T texture coordinate during load and save.
             loadOpt.setFlipTexCoordV(true);
             scene.open( MyDir + "Duck.gltf", loadOpt);
@@ -121,7 +121,7 @@ public class LoadOptions {
             String dataDir = RunExamples.getDataDir();
             //This will output all properties defined in GlobalSettings in FBX file.
             Scene scene = new Scene();
-            FBXLoadOptions opt = new FBXLoadOptions();
+            FbxLoadOptions opt = new FbxLoadOptions();
             opt.setKeepBuiltinGlobalSettings(true);
             scene.open(dataDir + "test.FBX", opt);
             for(Property property:scene.getRootNode().getAssetInfo().getProperties())

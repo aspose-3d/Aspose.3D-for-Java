@@ -62,7 +62,7 @@ public class RunExamples {
         // InformationToScene.run();
         // ExportSceneToCompressedAMF.run();
         // ChangePlaneOrientation.run();
-        ThreeDProperties.run();
+        // ThreeDProperties.run();
         
         // =====================================================
         // =====================================================

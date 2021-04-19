@@ -16,7 +16,7 @@ public class Non_PBRtoPBRMaterial {
             mat.setDiffuseColor(new Vector3(1, 0, 1));
             s.getRootNode().createChildNode("box1", box).setMaterial(mat);
 
-            GLTFSaveOptions opt = new GLTFSaveOptions(FileFormat.GLTF2);
+            GltfSaveOptions opt = new GltfSaveOptions(FileFormat.GLTF2);
             //Custom material converter to convert PhongMaterial to PbrMaterial
             opt.setMaterialConverter(new MaterialConverter() {
                 @Override

@@ -5,7 +5,7 @@
  */
 package examples.scene;
 
-import com.aspose.threed.AMFSaveOptions;
+import com.aspose.threed.AmfSaveOptions;
 import com.aspose.threed.Box;
 import com.aspose.threed.Scene;
 import com.aspose.threed.Transform;
@@ -28,7 +28,7 @@ public class ExportSceneToCompressedAMF {
             scene.getRootNode().createChildNode();
             scene.getRootNode().createChildNode().createChildNode(box);
             scene.getRootNode().createChildNode().createChildNode(box);
-            AMFSaveOptions opt = new AMFSaveOptions();
+            AmfSaveOptions opt = new AmfSaveOptions();
             opt.setEnableCompression(false);
             scene.save(MyDir + "test.amf", opt);
             // ExEnd:CompressedAMF

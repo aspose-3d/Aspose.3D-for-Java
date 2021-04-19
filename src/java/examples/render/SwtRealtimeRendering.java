@@ -19,7 +19,7 @@ public class SwtRealtimeRendering extends RenderBase {
         shell.setSize(800, 600);
         //Initialize renderer and scene
         Renderer renderer = Renderer.createRenderer();
-        IRenderWindow window = renderer.getRenderFactory().createRenderWindow(new RenderParameters(), shell.handle);
+        IRenderWindow window = renderer.getRenderFactory().createRenderWindow(new RenderParameters(), WindowHandle.fromWin32(shell.handle));
         Scene scene = new Scene();
         Camera camera = setupScene(scene);
         Viewport vp = window.createViewport(camera);

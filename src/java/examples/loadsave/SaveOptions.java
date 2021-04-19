@@ -25,7 +25,7 @@ public class SaveOptions {
         // Initialize 3D scene
         Scene scene = new Scene(new Sphere());
         // Initialize GLTFSaveOptions
-        GLTFSaveOptions opt = new GLTFSaveOptions(FileFormat.GLTF2);
+        GltfSaveOptions opt = new GltfSaveOptions(FileFormat.GLTF2);
         // opt.prettyPrint = true; //Old code
         // The JSON content of GLTF file is indented for human reading, default value is false
         // Use setter to change this configuration.
@@ -49,7 +49,7 @@ public class SaveOptions {
         light.setLightType(LightType.POINT);
         scene.getRootNode().createChildNode(light).getTransform().setTranslation(10, 0, 10);
         // Initialize HTML5SaveOptions
-        HTML5SaveOptions opt = new HTML5SaveOptions();
+        Html5SaveOptions opt = new Html5SaveOptions();
         // Turn off the grid
         opt.setShowGrid(false);
         //Turn off the user interface
@@ -78,7 +78,7 @@ public class SaveOptions {
             // The path to the documents directory.
             String MyDir = RunExamples.getDataDir();
             // Initialize an object
-            Discreet3DSSaveOptions saveOpts = new Discreet3DSSaveOptions();
+            Discreet3dsSaveOptions saveOpts = new Discreet3dsSaveOptions();
             // The start base for generating new name for duplicated names.
             saveOpts.setDuplicatedNameCounterBase(2);
             // The format of the duplicated counter.
@@ -107,7 +107,7 @@ public class SaveOptions {
             // The path to the documents directory.
             String MyDir = RunExamples.getDataDir();
             // Initialize an object
-            FBXSaveOptions saveOpts = new FBXSaveOptions(FileFormat.FBX7400ASCII);
+            FbxSaveOptions saveOpts = new FbxSaveOptions(FileFormat.FBX7400ASCII);
             // Generates the legacy material properties.
             saveOpts.setExportLegacyMaterialProperties(true);
             // Fold repeated curve data using FBX's animation reference count
@@ -145,7 +145,7 @@ public class SaveOptions {
             // The path to the documents directory.
             String MyDir = RunExamples.getDataDir();
             // Initialize an object
-            STLSaveOptions saveSTLOpts = new STLSaveOptions();
+            StlSaveOptions saveSTLOpts = new StlSaveOptions();
             // Flip the coordinate system.
             saveSTLOpts.setFlipCoordinateSystem(true);
             // Configure the look up paths to allow importer to find external dependencies.
@@ -158,7 +158,7 @@ public class SaveOptions {
             // The path to the documents directory.
             String MyDir = RunExamples.getDataDir();
             // Initialize an object
-            U3DSaveOptions saveU3DOptions = new U3DSaveOptions();
+            U3dSaveOptions saveU3DOptions = new U3dSaveOptions();
             // Export normal data.
             saveU3DOptions.setExportNormals(true);
             // Export the texture coordinates.
@@ -186,7 +186,7 @@ public class SaveOptions {
             scene.getRootNode().createChildNode("sphere", new Sphere());
             // Set glTF saving options. The code example embeds all assets into the target file usually a glTF file comes with some dependencies, a bin file for model's vertex/indices, two .glsl files for vertex/fragment shaders
             // Use opt.EmbedAssets to tells the Aspose.3D API to export scene and embed the dependencies inside the target file.
-            GLTFSaveOptions opt = new GLTFSaveOptions(FileContentType.ASCII);
+            GltfSaveOptions opt = new GltfSaveOptions(FileContentType.ASCII);
             opt.setEmbedAssets(true);
             // Use KHR_materials_common extension to define the material, thus no GLSL files are generated.
             opt.setUseCommonMaterials(true);
@@ -199,7 +199,7 @@ public class SaveOptions {
             scene.save(MyDir + "glTFSaveOptions_out.glb", FileFormat.GLTF__BINARY);
 
             // Developers may use saving options to create a binary glTF file using KHR_binary_glTF extension
-            GLTFSaveOptions opts = new GLTFSaveOptions(FileContentType.BINARY);
+            GltfSaveOptions opts = new GltfSaveOptions(FileContentType.BINARY);
             scene.save(MyDir + "Test_out.glb", opts);
             // ExEnd:glTFSaveOptions
         }
