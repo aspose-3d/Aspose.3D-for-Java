@@ -196,7 +196,7 @@ public class SaveOptions {
             scene.save(MyDir + "glTFSaveOptions_out.gltf", opt);
 
             // Save a binary glTF file using KHR_binary_glTF extension
-            scene.save(MyDir + "glTFSaveOptions_out.glb", FileFormat.GLTF__BINARY);
+            scene.save(MyDir + "glTFSaveOptions_out.glb", FileFormat.GLTF_BINARY);
 
             // Developers may use saving options to create a binary glTF file using KHR_binary_glTF extension
             GltfSaveOptions opts = new GltfSaveOptions(FileContentType.BINARY);
